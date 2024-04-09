@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BHARATH'S   WEBSITE</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Icons Link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="logo.html" class="logo">
+        <img src="E:\mywebsite\fill\srtech_logo.jpg" alt="Fiverr Logo" width="60"  height ="60">
+      </a>
+      <ul class="menu-links">
+        <li><a href="https://www.linkedin.com/in/ravindra-reddy-kovuri-80b4111a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_blank" >LinkedIn</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li class="language-item">
+          <a href="https://youtube.com/@srtechnologiesravindraredd5303?si=EzSq0DR5cP_Dr6CH">
+            <span class="material-symbols-outlined">language</span>
+            Youtube
+          </a>
+        </li>
+        <li><a href="Feature.html" target="_blank">Feature Courses</a></li>
+        <li><a href="thankyou.html">Subscribers</a></li>
+        <li class="join-btn"><a href="login.html" target="_blank">Join Us</a></li>
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+      </ul>
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="content">
+      <h1>Find the right Guidance, right away</h1>
+      <form action="#" class="search-form">
+        <input type="text" placeholder="Search for Our Courses..." required>
+        <button class="material-symbols-outlined" type="sumbit">search</button>
+      </form>
+      <div class="popular-tags">
+        Popular:
+        <ul class="tags">
+          <li><a href="https://youtube.com/playlist?list=PLZv9tikE8WQg8TDqmUCm0U2oCzMbdgwC4&si=KISPcSswugJ7jpLQ">UNIX For Testing</a></li>
+          <li><a href="https://youtube.com/playlist?list=PLZv9tikE8WQhYpvsdAmSFksDbLumZWb_r&si=HHdyt0ntTqZGhhku">SQL Database</a></li>
+          <li><a href="https://youtube.com/playlist?list=PLZv9tikE8WQj6DV5X5yDQKbMirf0wxZGD&si=5ERB9LyYiOpbIsVS">Pyspark</a></li>
+          <li><a href="https://youtube.com/playlist?list=PLZv9tikE8WQh_LlwH1RxXdcwI5lAwBUcu&si=XY0WRY5TcY9DrIf8">AI Tools</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    // Toggle mobile menu on hamburger button click
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+    // Close mobile menu on close button click
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+  </script>
+</body>
+</html>
